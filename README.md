@@ -19,6 +19,6 @@ Public URL - [https://evening-retreat-49986.herokuapp.com/](https://evening-retr
 2. install dependencies - run from console
 ``` yarn install ```
 3. run build script from console
-``` yarn run build
-Open link [http://localhost:5001](http://localhost:5001) in the browser
+``` yarn run build ```
+4. open link [http://localhost:5001](http://localhost:5001) in the browser
 
