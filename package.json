@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "build": "webpack --config webpack.config.js",
-    "task": "webpack --config webpack.config.js && node server/index.js"
+    "build": "webpack --config webpack.config.js && node server/index.js"
   },
   "engines": {
     "node": "6.11.1",
