@@ -8,7 +8,7 @@ App uses:
 * preact
 * webpack + babel
 
-Public URL - [https://evening-retreat-49986.herokuapp.com/](https://evening-retreat-49986.herokuapp.com/)
+Public URL - [https://travel-app-3shape.herokuapp.com](https://travel-app-3shape.herokuapp.com/)
 
 
 
