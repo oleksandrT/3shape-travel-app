@@ -31,5 +31,9 @@
     "src": "images/icons/homescreen192.png",
     "sizes": "192x192",
     "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen512.png",
+    "sizes": "512x512",
+    "type": "image/png"
   }]
 }
