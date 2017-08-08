@@ -1,0 +1,35 @@
+{
+  "name": "3Shape Travel App",
+  "short_name": "3S Travel",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#EFF0F1",
+  "theme_color": "#EFF0F1",
+  "description": "An app that saves you, when you're lost on your business trip.",
+  "icons": [{
+    "src": "images/icons/homescreen48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}

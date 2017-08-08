@@ -4,11 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3shape Travel App</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="image/icons/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
     <h1>Hello from HTML2</h1>
     <div id="main"></div>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+    </script>
     <script src="bundle.js"></script>
 
   </body>
