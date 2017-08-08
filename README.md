@@ -22,3 +22,9 @@ Public URL - [https://evening-retreat-49986.herokuapp.com/](https://evening-retr
 ``` yarn run build ```
 4. open link [http://localhost:5001](http://localhost:5001) in the browser
 
+
+
+### To debug
+
+1. Install the [React Developer Tools](https://github.com/facebook/react-devtools) extension
+2. Reload and go to the 'React' tab in the browser's development tools

@@ -1,6 +1,7 @@
 'use strict';
 
 import { h, Component } from 'preact'
+import 'preact/devtools'
 
 export default class App extends Component {
   constructor () {
