@@ -1,8 +1,5 @@
 /*
- * TO-DO:
- * 1) rename static to build ?
- * 2) split package.json for server and client
- * 3) set up webpack+babel+preact
+ * HTTP/2 is not currently supported on Heroku although this may change in future. 
 */
 
 const express = require("express");
