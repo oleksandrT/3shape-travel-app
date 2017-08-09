@@ -1466,7 +1466,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 
 
-module.exports = { "cities": [{ "name": "Kyiv", "imgSrc": "", "url": "Kyiv" }, { "name": "Copenhagen", "imgSrc": "", "url": "Copenhagen" }, { "name": "London", "imgSrc": "", "url": "London" }, { "name": "Milan", "imgSrc": "", "url": "Milan" }, { "name": "Paris", "imgSrc": "", "url": "Paris" }], "maps": { "copenhagenOffice": "Holmens Kanal 7", "copenhagenHotel": "Borgergade 9", "kievOffice": "Polyova str.", "kievHotel": "6 V. Hetmana Street" } };
+module.exports = { "cities": [{ "name": "Kyiv", "imgSrc": "/images/cities/Kyiv.png", "url": "Kyiv" }, { "name": "Copenhagen", "imgSrc": "/images/cities/Copenhagen.png", "url": "Copenhagen" }, { "name": "London", "imgSrc": "/images/cities/London.png", "url": "London" }, { "name": "Milan", "imgSrc": "/images/cities/Milan.png", "url": "Milan" }, { "name": "Paris", "imgSrc": "/images/cities/Paris.png", "url": "Paris" }], "maps": { "copenhagenOffice": "Holmens Kanal 7", "copenhagenHotel": "Borgergade 9", "kievOffice": "Polyova str.", "kievHotel": "6 V. Hetmana Street" } };
 
 /***/ }),
 /* 3 */
@@ -1560,7 +1560,7 @@ var App = function (_Component) {
             null,
             (0, _preact.h)(
               'a',
-              { href: '/Kiev' },
+              { href: '/Kyiv' },
               'Kiev'
             ),
             (0, _preact.h)('br', null),
@@ -1581,7 +1581,7 @@ var App = function (_Component) {
           _preactRouter2.default,
           null,
           (0, _preact.h)(_CityChoosingComponent2.default, { path: '/chooseCity', 'default': true }),
-          (0, _preact.h)(_KievComponent2.default, { path: '/Kiev' }),
+          (0, _preact.h)(_KievComponent2.default, { path: '/Kyiv' }),
           (0, _preact.h)(_CopenhagenComponent2.default, { path: '/Copenhagen' }),
           (0, _preact.h)(_MapComponent2.default, { path: '/Map' })
         )
@@ -2133,10 +2133,19 @@ var CityChoosingComponent = function (_Component) {
 
             return (0, _preact.h)(
                 'div',
-                { 'class': 'flex flex-centered' },
-                _cities2.default.cities.map(function (city, i) {
-                    return (0, _preact.h)(_CityCellComponent2.default, { key: i, name: city.name, imgSrc: 'http://www.imghost.in/img/2017-08/09/jvcv7mnjmbnkqukztxuewob86.png' });
-                })
+                null,
+                (0, _preact.h)(
+                    'div',
+                    null,
+                    (0, _preact.h)('img', { 'class': 'logo', src: '/images/3Shape Travel logo-01.svg' })
+                ),
+                (0, _preact.h)(
+                    'div',
+                    { 'class': 'flex flex-centered' },
+                    _cities2.default.cities.map(function (city, i) {
+                        return (0, _preact.h)(_CityCellComponent2.default, { key: i, name: city.name, imgSrc: city.imgSrc });
+                    })
+                )
             );
         }
     }]);

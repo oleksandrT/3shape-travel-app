@@ -2,27 +2,27 @@
     "cities": [
         {
             "name": "Kyiv",
-            "imgSrc": "",
+            "imgSrc": "/images/cities/Kyiv.png",
             "url": "Kyiv"
         },
         {
             "name": "Copenhagen",
-            "imgSrc": "",
+            "imgSrc": "/images/cities/Copenhagen.png",
             "url": "Copenhagen"
         },
         {
             "name": "London",
-            "imgSrc": "",
+            "imgSrc": "/images/cities/London.png",
             "url": "London"
         },
         {
             "name": "Milan",
-            "imgSrc": "",
+            "imgSrc": "/images/cities/Milan.png",
             "url": "Milan"
         },
         {
             "name": "Paris",
-            "imgSrc": "",
+            "imgSrc": "/images/cities/Paris.png",
             "url": "Paris"
         }
     ],

@@ -25,14 +25,14 @@ export default class App extends Component {
       <div>
         <div>
           <nav>
-            <a href="/Kiev">Kiev</a><br/>
+            <a href="/Kyiv">Kiev</a><br/>
             <a href="/Copenhagen">Copenhagen</a><br/>
             <a href="/Map">Map</a>
           </nav>
          </div> 
         <Router>
           <CityChoosingComponent path="/chooseCity" default/>
-          <KievComponent path="/Kiev" />
+          <KievComponent path="/Kyiv" />
           <CopenhagenComponent path="/Copenhagen" />
           <MapComponent path="/Map" />
         </Router>
