@@ -1,0 +1,29 @@
+{
+    "cities": [
+        {
+            "name": "Kyiv",
+            "imgSrc": "",
+            "url": "Kyiv"
+        },
+        {
+            "name": "Copenhagen",
+            "imgSrc": "",
+            "url": "Copenhagen"
+        },
+        {
+            "name": "London",
+            "imgSrc": "",
+            "url": "London"
+        },
+        {
+            "name": "Milan",
+            "imgSrc": "",
+            "url": "Milan"
+        },
+        {
+            "name": "Paris",
+            "imgSrc": "",
+            "url": "Paris"
+        }
+    ]
+}
