@@ -21,8 +21,8 @@ export default class App extends Component {
   render (props, state) {
     return (
       <div>
-        <p>Address</p>
-        <img src="" alt="map" />
+        <p>{data.maps.copenhagenOffice}</p>
+        <img src="/images/maps/map_copenhagen_office.jpg" alt="map" />
         <ul>
           <li onClick={this.changeMap}>Hotel</li>
           <li>Office</li>

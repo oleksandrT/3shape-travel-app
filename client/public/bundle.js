@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/client/static/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1466,9 +1466,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 
 
+module.exports = { "cities": [{ "name": "Kyiv", "imgSrc": "", "url": "Kyiv" }, { "name": "Copenhagen", "imgSrc": "", "url": "Copenhagen" }, { "name": "London", "imgSrc": "", "url": "London" }, { "name": "Milan", "imgSrc": "", "url": "Milan" }, { "name": "Paris", "imgSrc": "", "url": "Paris" }], "maps": { "copenhagenOffice": "Holmens Kanal 7", "copenhagenHotel": "Borgergade 9", "kievOffice": "Polyova str.", "kievHotel": "6 V. Hetmana Street" } };
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _preact = __webpack_require__(0);
 
-var _App = __webpack_require__(3);
+var _App = __webpack_require__(4);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -1479,7 +1488,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1493,23 +1502,23 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _preactRouter = __webpack_require__(4);
+var _preactRouter = __webpack_require__(5);
 
 var _preactRouter2 = _interopRequireDefault(_preactRouter);
 
-var _KievComponent = __webpack_require__(5);
+var _KievComponent = __webpack_require__(6);
 
 var _KievComponent2 = _interopRequireDefault(_KievComponent);
 
-var _CopenhagenComponent = __webpack_require__(6);
+var _CopenhagenComponent = __webpack_require__(7);
 
 var _CopenhagenComponent2 = _interopRequireDefault(_CopenhagenComponent);
 
-var _CityChoosingComponent = __webpack_require__(7);
+var _CityChoosingComponent = __webpack_require__(8);
 
 var _CityChoosingComponent2 = _interopRequireDefault(_CityChoosingComponent);
 
-var _MapComponent = __webpack_require__(9);
+var _MapComponent = __webpack_require__(10);
 
 var _MapComponent2 = _interopRequireDefault(_MapComponent);
 
@@ -1586,7 +1595,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1975,7 +1984,7 @@ exports.default = Router;
 //# sourceMappingURL=preact-router.es.js.map
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2027,7 +2036,7 @@ var KievComponent = function (_Component) {
 exports.default = KievComponent;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2079,7 +2088,7 @@ var CopenhagenComponent = function (_Component) {
 exports.default = CopenhagenComponent;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2093,9 +2102,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _CityCellComponent = __webpack_require__(8);
+var _CityCellComponent = __webpack_require__(9);
 
 var _CityCellComponent2 = _interopRequireDefault(_CityCellComponent);
+
+var _cities = __webpack_require__(2);
+
+var _cities2 = _interopRequireDefault(_cities);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2121,8 +2134,9 @@ var CityChoosingComponent = function (_Component) {
             return (0, _preact.h)(
                 'div',
                 { 'class': 'flex flex-centered' },
-                (0, _preact.h)(_CityCellComponent2.default, { name: 'Copenhagen', imgSrc: 'http://www.imghost.in/img/2017-08/09/jvcv7mnjmbnkqukztxuewob86.png' }),
-                (0, _preact.h)(_CityCellComponent2.default, { name: 'Kiev', imgSrc: 'http://www.imghost.in/img/2017-08/09/nlvdqryuj3yozlcg6r2eft78a.png' })
+                _cities2.default.cities.map(function (city, i) {
+                    return (0, _preact.h)(_CityCellComponent2.default, { key: i, name: city.name, imgSrc: 'http://www.imghost.in/img/2017-08/09/jvcv7mnjmbnkqukztxuewob86.png' });
+                })
             );
         }
     }]);
@@ -2133,7 +2147,7 @@ var CityChoosingComponent = function (_Component) {
 exports.default = CityChoosingComponent;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2193,7 +2207,7 @@ var CityCellComponent = function (_Component) {
 exports.default = CityCellComponent;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2209,7 +2223,7 @@ var _preact = __webpack_require__(0);
 
 __webpack_require__(1);
 
-var _cities = __webpack_require__(10);
+var _cities = __webpack_require__(2);
 
 var _cities2 = _interopRequireDefault(_cities);
 
@@ -2250,9 +2264,9 @@ var App = function (_Component) {
         (0, _preact.h)(
           'p',
           null,
-          'Address'
+          _cities2.default.maps.copenhagenOffice
         ),
-        (0, _preact.h)('img', { src: '', alt: 'map' }),
+        (0, _preact.h)('img', { src: '/images/maps/map_copenhagen_office.jpg', alt: 'map' }),
         (0, _preact.h)(
           'ul',
           null,
@@ -2275,12 +2289,6 @@ var App = function (_Component) {
 }(_preact.Component);
 
 exports.default = App;
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: SyntaxError: D:/Projects/3shape travel app/code/client/cities.json: Unexpected token, expected ; (2:12)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2 | \u001b[39m    \u001b[32m\"cities\"\u001b[39m\u001b[33m:\u001b[39m [\n \u001b[90m   | \u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3 | \u001b[39m        {\n \u001b[90m 4 | \u001b[39m            \u001b[32m\"name\"\u001b[39m\u001b[33m:\u001b[39m \u001b[32m\"Kyiv\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 5 | \u001b[39m            \u001b[32m\"imgSrc\"\u001b[39m\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
 
 /***/ })
 /******/ ]);

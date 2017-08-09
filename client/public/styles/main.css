@@ -7,6 +7,9 @@
     justify-content: center;
 }
 
+.city-cell {
+    min-width: 150px;
+}
 .city-cell-link {
     flex-direction: column;
     padding: 20px;

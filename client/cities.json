@@ -26,9 +26,11 @@
             "url": "Paris"
         }
     ],
-    "maps": [
+    "maps": 
         {
-            "copenhagenOffice": "images/maps/map_copenhagen_office.jpg"
+            "copenhagenOffice": "Holmens Kanal 7",
+            "copenhagenHotel": "Borgergade 9",
+            "kievOffice": "Polyova str.",
+            "kievHotel": "6 V. Hetmana Street"
         }
-    ]
 }
