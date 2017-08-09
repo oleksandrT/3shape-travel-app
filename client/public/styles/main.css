@@ -9,8 +9,18 @@
 body {
     font-family: 'Karbon';
 }
+
+#app {
+    margin: auto;
+    max-width: 640px;
+    border: 1px solid #bbb;
+}
+
 .flex {
     display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-centered {
@@ -19,16 +29,17 @@ body {
 }
 
 .city-cell {
+    flex: 1 1 25%;
 }
 
 .city-cell-link {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
 }
 
 .city-cell-image {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 100%;
     height: auto;
 }

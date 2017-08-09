@@ -12,7 +12,7 @@ export default class CityChoosingComponent extends Component {
             <div>
                 <img class="logo" src="/images/3Shape Travel logo-01.svg"/>
             </div>    
-            <div class="flex flex-centered">
+            <div class="flex flex-centered flex-wrap">
                 {cities.cities.map(function(city, i){
                     return <CityCellComponent key={i} name={city.name} imgSrc={city.imgSrc}/> 
                 })}

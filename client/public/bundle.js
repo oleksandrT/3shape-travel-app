@@ -1551,7 +1551,7 @@ var App = function (_Component) {
     value: function render(props, state) {
       return (0, _preact.h)(
         'div',
-        null,
+        { id: 'app' },
         (0, _preact.h)(
           'div',
           null,
@@ -2141,7 +2141,7 @@ var CityChoosingComponent = function (_Component) {
                 ),
                 (0, _preact.h)(
                     'div',
-                    { 'class': 'flex flex-centered' },
+                    { 'class': 'flex flex-centered flex-wrap' },
                     _cities2.default.cities.map(function (city, i) {
                         return (0, _preact.h)(_CityCellComponent2.default, { key: i, name: city.name, imgSrc: city.imgSrc });
                     })

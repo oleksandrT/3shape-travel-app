@@ -22,7 +22,7 @@ export default class App extends Component {
 
   render (props, state) {
     return (
-      <div>
+      <div id="app">
         <div>
           <nav>
             <a href="/Kyiv">Kiev</a><br/>
