@@ -25,5 +25,10 @@
             "imgSrc": "",
             "url": "Paris"
         }
+    ],
+    "maps": [
+        {
+            "copenhagenOffice": "images/maps/map_copenhagen_office.jpg"
+        }
     ]
 }

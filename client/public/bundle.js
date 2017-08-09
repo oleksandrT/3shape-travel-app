@@ -2209,6 +2209,12 @@ var _preact = __webpack_require__(0);
 
 __webpack_require__(1);
 
+var _cities = __webpack_require__(10);
+
+var _cities2 = _interopRequireDefault(_cities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -2225,17 +2231,42 @@ var App = function (_Component) {
 
     _this.state = {
       searches: []
-      //this.addSearch = this.addSearch.bind(this)
-    };return _this;
+    };
+    _this.changeMap = _this.changeMap.bind(_this);
+    return _this;
   }
 
   _createClass(App, [{
+    key: 'changeMap',
+    value: function changeMap() {
+      console.log('changeMap');
+    }
+  }, {
     key: 'render',
     value: function render(props, state) {
       return (0, _preact.h)(
         'div',
         null,
-        'Map'
+        (0, _preact.h)(
+          'p',
+          null,
+          'Address'
+        ),
+        (0, _preact.h)('img', { src: '', alt: 'map' }),
+        (0, _preact.h)(
+          'ul',
+          null,
+          (0, _preact.h)(
+            'li',
+            { onClick: this.changeMap },
+            'Hotel'
+          ),
+          (0, _preact.h)(
+            'li',
+            null,
+            'Office'
+          )
+        )
       );
     }
   }]);
@@ -2244,6 +2275,12 @@ var App = function (_Component) {
 }(_preact.Component);
 
 exports.default = App;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: D:/Projects/3shape travel app/code/client/cities.json: Unexpected token, expected ; (2:12)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2 | \u001b[39m    \u001b[32m\"cities\"\u001b[39m\u001b[33m:\u001b[39m [\n \u001b[90m   | \u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3 | \u001b[39m        {\n \u001b[90m 4 | \u001b[39m            \u001b[32m\"name\"\u001b[39m\u001b[33m:\u001b[39m \u001b[32m\"Kyiv\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 5 | \u001b[39m            \u001b[32m\"imgSrc\"\u001b[39m\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
 
 /***/ })
 /******/ ]);

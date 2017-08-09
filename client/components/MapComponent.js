@@ -1,8 +1,9 @@
 'use strict';
 
 import { h, Component } from 'preact'
-
 import 'preact/devtools'
+
+import data from '../cities.json'
 
 export default class App extends Component {
   constructor () {
