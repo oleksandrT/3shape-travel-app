@@ -1,6 +1,13 @@
 'use strict';
 
 import { h, Component } from 'preact'
+import Router from 'preact-router'
+
+import KievComponent from './KievComponent'
+import CopenhagenComponent from './CopenhagenComponent'
+
+import CityChoosingComponent from './CityChoosingComponent'
+
 import 'preact/devtools'
 
 export default class App extends Component {
@@ -15,8 +22,21 @@ export default class App extends Component {
   render (props, state) {
     return (
       <div>
-        Hi from preact 2
+        <div>
+          <nav>
+            <a href="/Kiev">Kiev</a><br/>
+            <a href="/Copenhagen">Copenhagen</a>
+          </nav>
+         </div> 
+        <Router>
+          <CityChoosingComponent path="/chooseCity" default/>
+          <KievComponent path="/Kiev" />
+          <CopenhagenComponent path="/Copenhagen" />
+        </Router>
       </div>
     )
   }
 }
+
+
+

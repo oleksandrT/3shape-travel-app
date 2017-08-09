@@ -14,8 +14,12 @@
   "author": "3shape",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.28.4",
     "express": "^4.15.3",
-    "preact": "^8.2.1"
+    "preact": "^8.2.1",
+    "preact-router": "^2.5.5",
+    "style-loader": "^0.18.2",
+    "to-string-loader": "^1.1.5"
   },
   "devDependencies": {
     "babel": "^6.23.0",
