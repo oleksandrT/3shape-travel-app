@@ -3,6 +3,8 @@
 import { h, Component } from 'preact'
 import 'preact/devtools'
 
+
+
 export default class CityCellComponent extends Component {
   render (props, state) {
 

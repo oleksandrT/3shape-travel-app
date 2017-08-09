@@ -2086,6 +2086,10 @@ var _CityCellComponent = __webpack_require__(8);
 
 var _CityCellComponent2 = _interopRequireDefault(_CityCellComponent);
 
+var _cities = __webpack_require__(9);
+
+var _cities2 = _interopRequireDefault(_cities);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2110,8 +2114,9 @@ var CityChoosingComponent = function (_Component) {
             return (0, _preact.h)(
                 'div',
                 { 'class': 'flex flex-centered' },
-                (0, _preact.h)(_CityCellComponent2.default, { name: 'Copenhagen', imgSrc: 'http://www.imghost.in/img/2017-08/09/jvcv7mnjmbnkqukztxuewob86.png' }),
-                (0, _preact.h)(_CityCellComponent2.default, { name: 'Kiev', imgSrc: 'http://www.imghost.in/img/2017-08/09/nlvdqryuj3yozlcg6r2eft78a.png' })
+                _cities2.default.cities.map(function (city, i) {
+                    return (0, _preact.h)(_CityCellComponent2.default, { key: i, name: city.name, imgSrc: 'http://www.imghost.in/img/2017-08/09/jvcv7mnjmbnkqukztxuewob86.png' });
+                })
             );
         }
     }]);
@@ -2180,6 +2185,15 @@ var CityCellComponent = function (_Component) {
 }(_preact.Component);
 
 exports.default = CityCellComponent;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = { "cities": [{ "name": "Kyiv", "imgSrc": "", "url": "Kyiv" }, { "name": "Copenhagen", "imgSrc": "", "url": "Copenhagen" }, { "name": "London", "imgSrc": "", "url": "London" }, { "name": "Milan", "imgSrc": "", "url": "Milan" }, { "name": "Paris", "imgSrc": "", "url": "Paris" }] };
 
 /***/ })
 /******/ ]);
