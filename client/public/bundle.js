@@ -1509,6 +1509,10 @@ var _CityChoosingComponent = __webpack_require__(7);
 
 var _CityChoosingComponent2 = _interopRequireDefault(_CityChoosingComponent);
 
+var _MapComponent = __webpack_require__(9);
+
+var _MapComponent2 = _interopRequireDefault(_MapComponent);
+
 __webpack_require__(1);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1555,6 +1559,12 @@ var App = function (_Component) {
               'a',
               { href: '/Copenhagen' },
               'Copenhagen'
+            ),
+            (0, _preact.h)('br', null),
+            (0, _preact.h)(
+              'a',
+              { href: '/Map' },
+              'Map'
             )
           )
         ),
@@ -1563,7 +1573,8 @@ var App = function (_Component) {
           null,
           (0, _preact.h)(_CityChoosingComponent2.default, { path: '/chooseCity', 'default': true }),
           (0, _preact.h)(_KievComponent2.default, { path: '/Kiev' }),
-          (0, _preact.h)(_CopenhagenComponent2.default, { path: '/Copenhagen' })
+          (0, _preact.h)(_CopenhagenComponent2.default, { path: '/Copenhagen' }),
+          (0, _preact.h)(_MapComponent2.default, { path: '/Map' })
         )
       );
     }
@@ -2180,6 +2191,59 @@ var CityCellComponent = function (_Component) {
 }(_preact.Component);
 
 exports.default = CityCellComponent;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+__webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_Component) {
+  _inherits(App, _Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+    _this.state = {
+      searches: []
+      //this.addSearch = this.addSearch.bind(this)
+    };return _this;
+  }
+
+  _createClass(App, [{
+    key: 'render',
+    value: function render(props, state) {
+      return (0, _preact.h)(
+        'div',
+        null,
+        'Map'
+      );
+    }
+  }]);
+
+  return App;
+}(_preact.Component);
+
+exports.default = App;
 
 /***/ })
 /******/ ]);

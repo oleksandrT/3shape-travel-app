@@ -7,6 +7,7 @@ import KievComponent from './KievComponent'
 import CopenhagenComponent from './CopenhagenComponent'
 
 import CityChoosingComponent from './CityChoosingComponent'
+import MapComponent from './MapComponent'
 
 import 'preact/devtools'
 
@@ -25,13 +26,15 @@ export default class App extends Component {
         <div>
           <nav>
             <a href="/Kiev">Kiev</a><br/>
-            <a href="/Copenhagen">Copenhagen</a>
+            <a href="/Copenhagen">Copenhagen</a><br/>
+            <a href="/Map">Map</a>
           </nav>
          </div> 
         <Router>
           <CityChoosingComponent path="/chooseCity" default/>
           <KievComponent path="/Kiev" />
           <CopenhagenComponent path="/Copenhagen" />
+          <MapComponent path="/Map" />
         </Router>
       </div>
     )

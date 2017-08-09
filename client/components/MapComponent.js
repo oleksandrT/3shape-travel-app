@@ -10,13 +10,22 @@ export default class App extends Component {
     this.state = {
       searches: []
     }
-    //this.addSearch = this.addSearch.bind(this)
+    this.changeMap = this.changeMap.bind(this)
+  }
+
+  changeMap() {
+    console.log('changeMap');
   }
 
   render (props, state) {
     return (
       <div>
-        Map
+        <p>Address</p>
+        <img src="" alt="map" />
+        <ul>
+          <li onClick={this.changeMap}>Hotel</li>
+          <li>Office</li>
+        </ul>
       </div>
     )
   }
